@@ -1,8 +1,9 @@
-# Scripts (So far): 
+# Scripts: 
 - openssh.sh
 - honeypot.sh
 - setup_MITM.sh
 - recycle.sh
+- make_con.sh
 
 ## openssh.sh
 Installs opennssh inside the container 
@@ -20,4 +21,6 @@ Includes a timer of 30 minutes. Once the attacker has ssh into the container, th
 ### Other Stuff:
 Use `sudo DOWNLOAD_KEYSERVER="keyserver.ubuntu.com" lxc-create -n [container name] -t download -- -d ubuntu -r focal -a amd64` when encountering the GPG key ring issue.
 
+##make_con.sh
+Script for automatically creating a container
 
