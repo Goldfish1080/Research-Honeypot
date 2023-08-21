@@ -18,9 +18,11 @@ Creates all 4 honeypot containers. Each container will have openssh, an MITM ser
 ## recycle.sh
 Includes a timer of 30 minutes. Once the attacker has ssh into the container, the timer will start and will proceed to recycle once the timer is finished. 
 
+## make_con.sh
+Script for automatically creating a container
+
 ### Other Stuff:
 Use `sudo DOWNLOAD_KEYSERVER="keyserver.ubuntu.com" lxc-create -n [container name] -t download -- -d ubuntu -r focal -a amd64` when encountering the GPG key ring issue.
 
-##make_con.sh
-Script for automatically creating a container
+
 
